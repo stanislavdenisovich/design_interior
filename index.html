@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Студия дизайна интерьера</title>
+    <link rel="stylesheet" href="static/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="static/images/4.png" alt="Logo" />
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="#hero">Главная</a></li>
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#services">Мои услуги</a></li>
+          <a
+            href="https://www.instagram.com/design_interior_katarina?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            target="_blank"
+            ><img
+              src="https://designrepublic.kz/wp-content/themes/republic/images/instagram-menu.svg"
+              alt="Instagram"
+              class="instagram"
+          /></a>
+          <li><a href="#portfolio">Мои работы</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+        <div class="burger" id="burger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+      <nav class="nav_number">
+        <ul class="ul_number">
+          <li class="number">
+            <a class="number" href="tel:+77003035000" class="call">
+              <span class="call__icon"></span>
+              <span class="call__text">+7 708 364 1047</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="hero">
+      <div class="hero-content">
+        <div class="container">
+          <div class="promo__title">
+            <p id="del">Индивидуальные решения для вашего интерьера</p>
+            <h1>Дизайн интерьера</h1>
+          </div>
+
+          <div class="promo__desc">
+            <p id="del">
+              Полный цикл услуг: от разработки проекта до реализации с учетом
+              ваших пожеланий и бюджета.
+            </p>
+            <h2>
+              Предлагаем эксклюзивные решения для вашего дома или офиса с
+              гарантией качества.
+            </h2>
+          </div>
+
+          <div class="promo__bottom">
+            <a
+              href="#"
+              data-modal="1"
+              data-modal-name="promo__box"
+              class="promo__btn js-open-modal"
+              >Рассчитать ваш проект</a
+            >
+
+            <div id="promo__box" class="modal">
+              <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2 class="mmm" style="text-align: left">
+                  Рассчитайте стоимость вашего проекта
+                </h2>
+
+                <form id="calculatorForm">
+                  <label for="squareMeters">Площадь дома (в м²):</label>
+                  <input
+                    type="number"
+                    id="squareMeters"
+                    name="squareMeters"
+                    required
+                  />
+
+                  <button
+                    type="submit"
+                    class="promo__btn"
+                    style="margin-top: 20px"
+                  >
+                    Рассчитать стоимость
+                  </button>
+                </form>
+
+                <div id="result" class="result"></div>
+              </div>
+            </div>
+
+            >
+            <a
+              data-fancybox=""
+              target="_blank"
+              href="https://www.instagram.com/reel/CzxuaI5NpLZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+              class="promo__about"
+            >
+              <img
+                src="https://designrepublic.kz/wp-content/themes/republic/images/video-play.svg"
+                alt="Видео о дизайне интерьера"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="about-container">
+        <div class="about-text">
+          <h2>Обо мне</h2>
+          <p>
+            Здравствуйте! Меня зовут Екатерина, и я — профессиональный дизайнер
+            интерьера с 15 летним опытом работы. Моя страсть — это создание
+            уникальных, уютных и функциональных пространств, которые отражают
+            индивидуальность и стиль каждого клиента.
+          </p>
+          <p id="del">
+            Я уверена, что дизайн — это не просто красивые вещи, это искусство
+            создания атмосферы, в которой человек будет чувствовать себя
+            комфортно и гармонично. Я работаю над каждым проектом с полной
+            отдачей, уделяя внимание всем деталям, от выбора материалов до
+            последнего штриха в интерьере.
+          </p>
+          <p id="del">
+            Моя задача — сделать ваш дом не только красивым, но и максимально
+            удобным для жизни. Я всегда стремлюсь к тому, чтобы интерьер был не
+            только стильным, но и функциональным, а каждый элемент дизайна был
+            на своем месте.
+          </p>
+        </div>
+        <div class="about-image">
+          <img
+            src="https://dizayn-interera.moscow/images/blog/111/0_ta0g-5m.jpg"
+            alt="Екатерина - Дизайнер интерьера"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <center><h2>Мои услуги</h2></center>
+      <div class="services-list">
+        <div class="tariff__item">
+          <div class="tariff__subtitle">Без Авторского</div>
+          <div class="tariff-price__num">
+            <strong style="text-align: center; display: block; color: #db9340"
+              >6.000 тг/кв.м</strong
+            >
+          </div>
+          <div class="tariff__text">
+            [Концепция интерьера + чертежи + 3D - Авторский надзор]
+          </div>
+
+          <div class="tariff__details" id="tariff-details-1">
+            <ul class="tariff__list">
+              <li class="tariff__el">
+                Передача всех чертежей и планов в форматах для самостоятельной
+                реализации
+              </li>
+              <li class="tariff__el">
+                Детализированная документация для выполнения работ
+              </li>
+              <li class="tariff__el">
+                Предоставление рекомендаций по материалам и мебели для покупки
+              </li>
+              <li class="tariff__el_2">
+                Без контроля за реализацией и выполнением дизайна
+              </li>
+              <li class="tariff__el_2">
+                Отсутствие авторского надзора в процессе реализации
+              </li>
+            </ul>
+          </div>
+
+          <div class="tariff__more">
+            <span
+              class="mmm"
+              data-target="tariff-details-1"
+              onclick="toggleTariffDetails(event)"
+              >Показать описание тарифа</span
+            >
+            <i></i>
+          </div>
+          <a
+            href="#contact"
+            data-modal="1"
+            data-modal-name="КОНЦЕПТ"
+            class="promo__btn_2 js-open-modal"
+            style="margin-bottom: 10px"
+            >Заказать дизайн</a
+          >
+        </div>
+
+        <div class="tariff__item">
+          <div class="tariff__subtitle">С Авторским</div>
+          <div class="tariff-price__num">
+            <strong style="text-align: center; display: block; color: #db9340"
+              >9.000 тг/кв.м</strong
+            >
+          </div>
+          <div class="tariff__text">
+            [Концепция интерьера + чертежи + 3D + Авторский надзор]
+          </div>
+
+          <div class="tariff__details" id="tariff-details-2">
+            <ul class="tariff__list">
+              <li class="tariff__el">
+                Регулярный контроль за выполнением проекта на всех этапах
+              </li>
+              <li class="tariff__el">
+                Консультации по выбору материалов и мебели, согласование покупок
+              </li>
+              <li class="tariff__el">
+                Авторский надзор за качеством исполнения работ
+              </li>
+              <li class="tariff__el">
+                Корректировка проектных решений в процессе реализации
+              </li>
+              <li class="tariff__el">
+                Посещение строительного объекта для проверки соответствия
+                проекту
+              </li>
+              <li class="tariff__el">
+                Корректировка работы подрядчиков по замечаниям дизайнера
+              </li>
+              <li class="tariff__el">
+                Консультирование по вопросам установки и монтажа
+              </li>
+            </ul>
+          </div>
+          <div class="tariff__more">
+            <span
+              class="mmmm"
+              data-target="tariff-details-2"
+              onclick="toggleTariffDetails(event)"
+              >Показать описание тарифа</span
+            >
+            <i></i>
+          </div>
+          <a
+            href="#contact"
+            data-modal="1"
+            data-modal-name="КОНЦЕПТ"
+            class="promo__btn_2 js-open-modal"
+            >Заказать дизайн</a
+          >
+        </div>
+
+        <div class="tariff__item">
+          <div class="tariff__subtitle">Одноразовый Выезд</div>
+          <div class="tariff-price__num">
+            <strong style="text-align: center; display: block; color: #db9340"
+              >15.000 тг</strong
+            >
+          </div>
+          <div class="tariff__text">
+            [Одноразовый выезд + Замер + Консультация]
+          </div>
+
+          <div class="tariff__details" id="tariff-details-3">
+            <ul class="tariff__list">
+              <li class="tariff__el">
+                Одноразовый выезд на объект для консультации или уточнения
+                деталей
+              </li>
+              <li class="tariff__el">
+                Проведение замеров и сбор необходимых данных для проекта
+              </li>
+              <li class="tariff__el">
+                Предоставление рекомендаций по планировке и использованию
+                пространства на месте
+              </li>
+              <li class="tariff__el">
+                Краткая консультация по выбору отделочных материалов или мебели
+                на месте
+              </li>
+              <li class="tariff__el">
+                Подготовка предварительных эскизов или предложений в рамках
+                разового визита
+              </li>
+            </ul>
+          </div>
+
+          <div class="tariff__more">
+            <span
+              class="mmmmm"
+              data-target="tariff-details-3"
+              onclick="toggleTariffDetails(event)"
+              >Показать описание тарифа</span
+            >
+            <i></i>
+          </div>
+          <a
+            href="#contact"
+            data-modal="1"
+            data-modal-name="КОНЦЕПТ"
+            class="promo__btn_2 js-open-modal"
+            >Заказать дизайн</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <h2>Мои работы</h2>
+      <div class="portfolio-gallery">
+        <div class="portfolio-item">
+          <img src="static/images/1.jpg" alt="Проект 1" />
+        </div>
+        <div class="portfolio-item">
+          <img src="static/images/2.jpg" alt="Проект 2" />
+        </div>
+        <div class="portfolio-item">
+          <img src="static/images/3.jpg" alt="Проект 3" />
+        </div>
+      </div>
+      <div class="portfolio-download">
+        <h3 style="margin-bottom: 0px">
+          Для подробного ознакомления с проектами
+        </h3>
+        <a
+          style="margin-top: 40px"
+          href="static/images/design.7z"
+          class="promo__btn_2"
+          target="_blank"
+          download
+          >Скачать PDF</a
+        >
+      </div>
+    </section>
+
+    <center class="contact-all">
+      <section id="contact" class="contact-section">
+        <h2 class="contact-title">Контакты</h2>
+        <form
+          action="https://formspree.io/f/mrbpzzkb"
+          method="POST"
+          class="contact-form"
+        >
+          <div class="form-group">
+            <label for="name" class="form-label">Имя:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Введите ваше имя"
+              class="form-input"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="phone" class="form-label">Телефон:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              placeholder="+7 708 364 1057"
+              class="form-input"
+            />
+          </div>
+
+          <button type="submit" class="promo__btn_2">Отправить</button>
+        </form>
+        <div class="form-footer">
+          <p class="form-footer-text">
+            Мы ценим ваш интерес и скоро свяжемся с вами.
+          </p>
+        </div>
+      </section>
+    </center>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/dist/email.min.js"
+    ></script>
+
+    <script>
+      (function () {
+        emailjs.init("YOUR_USER_ID"); // Замените на ваш User ID
+
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            var templateParams = {
+              name: document.getElementById("name").value,
+              phone: document.getElementById("phone").value,
+            };
+
+            emailjs
+              .send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", templateParams)
+              .then(
+                function (response) {
+                  alert("Сообщение отправлено!");
+                },
+                function (error) {
+                  alert("Ошибка: " + error);
+                }
+              );
+          });
+      })();
+    </script>
+
+    <footer class="footer">
+      <div class="container-fluid footer__top">
+        <div class="footer__left">
+          <a href="/" class="logo">
+            <img
+              src="https://designrepublic.kz/wp-content/themes/republic/images/logo2.svg"
+              alt="Design Republic"
+            />
+          </a>
+        </div>
+        <ul class="footer__nav">
+          <li class="footer__nav-el">
+            <a href="#hero" class="footer__nav-link">Главная</a>
+          </li>
+          <li class="footer__nav-el">
+            <a href="#portfolio" class="footer__nav-link">Мои работы</a>
+          </li>
+          <li class="footer__nav-el">
+            <a href="#contact" class="footer__nav-link">Контакты</a>
+          </li>
+          <li class="footer__nav-el">
+            <a href="#about" class="footer__nav-link">Обо мне</a>
+          </li>
+          <li class="footer__nav-el">
+            <a
+              href="https://www.instagram.com/design_interior_katarina?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              target="_blank"
+              class="footer__nav-link footer__nav-link-n"
+            >
+              <img
+                src="https://designrepublic.kz/wp-content/themes/republic/images/instagram-menu.svg"
+                alt="Instagram"
+                class="instagram"
+              />
+            </a>
+          </li>
+          <li class="footer__nav-el">
+            <a href="#services" class="footer__nav-link">Мои услуги</a>
+          </li>
+        </ul>
+        <div class="footer__right">
+          <p>Караганда</p>
+          <p>
+            Почта для поставщиков:
+            <a href="mailto:info@designrepublic.kz">CKatarina84@mail.ru</a>
+          </p>
+          <p>
+            Номер телефона :
+            <a href="mailto:job@designrepublic.kz">+7 708 364 1057</a>
+          </p>
+          <div class="footer__nav">
+            <a
+              href="/rekvizity-kompanii/"
+              class="footer__nav-link"
+              style="font-size: 11px"
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid seo__footer">
+        <div class="footer__copyright">2025 © Дизайна интерьера</div>
+      </div>
+    </footer>
+
+    <script src="static/js/script.js"></script>
+  </body>
+</html>
